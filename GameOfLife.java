@@ -13,8 +13,8 @@ public class GameOfLife {
 		//// (Run one test at a time).
 		//// test1(fileName);
 		//// test2(fileName);
-		//// test3(fileName, 3);
-		 play(fileName);
+		 test3(fileName, 3);
+		//// play(fileName);
 	}
 	
 	// Reads the data file and prints the initial board.
@@ -228,8 +228,8 @@ public class GameOfLife {
 		//// Write your code here.
 		int rowsize = arr.length;
 		int colsize = arr[1].length;
-		for (int i = 0; i < rowsize; i++) {
-			for (int j = 0; j < colsize; j++) {
+		for (int i = 1; i < rowsize-1; i++) {
+			for (int j = 1; j < colsize-1; j++) {
 			//System.out.print(arr[i][j] + " ");
 			System.out.printf(arr[i][j] + " ");
 			}
